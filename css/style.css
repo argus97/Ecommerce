@@ -1,125 +1,924 @@
-.hvr-underline-from-center {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
-    position: relative;
-    overflow: hidden;
+body {
+  margin: 0;
 }
-body{
-    margin: 0;
-}
-input.input-search {
-    height: 15px;
-    margin-right: 2px;
-}
-button.btn-user {
-    height: 35px;
-    background-color: black;
-    border: 0;
-    color: aliceblue;
-}
-.btn-search {
-    border: 0;
-    height: 21px;
-    border-radius: 3px;
-    background-color: burlywood;
-}
-input.input-search:focus-visible {
-    outline: none;
-}
-img.cart-icon {
-    width: 35px;
-    position: absolute;
-    right: 80px;
-}
-.f-sub{
-    text-align: center;
-    padding: 10px;
-    background-color: #5a5a5a;
-}
-.menu {
-    background-color: black;
-}
-.menu ul{
-    list-style: none;
-    display: flex;
-    margin: 0;
-}
-.menu li{
-    color:aliceblue;
-    margin: 10px;
 
-}
-.menu h5{
-    margin: 0;
-}
-.form-control:focus-visible {
-    outline: none;
-    box-shadow: inset 0 0 8px 0px black;
-    transition: 0.2s;
-}
-li.user-link {
-    position: absolute;
-    right: 15px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin: 3px;
-}
-.user-link a {
-    margin: 3px;
-    color: aliceblue;
-}
-.form-login{
-    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .form-access {
+    width: 30%;
+    display: -ms-grid;
     display: grid;
     padding: 10%;
     border: 1px solid black;
     margin: 70px;
     border-radius: 5px;
-    background-color: #e3d6c3;
-}
-button.send{
-    width: 100px;
+    background-color: #f7f7f7;
+  }
+  .container .form-access h2.form-title {
+    text-align: center;
+  }
+  .container .form-access button.send {
+    width: 100%;
     padding: 6px;
     margin-top: 15px;
-    background-color:rgb(201 198 198);
+    background-color: #f0aeae;
     border-radius: 6px;
     border: 0px;
-}
-button.send:hover {
+  }
+  .container .form-access button.send:hover {
     background-color: #d0d1d1;
-}
-.form-control {
+  }
+  .container .form-access .form-control {
+    width: 100%;
     border: 1px solid lightgrey;
     height: 30px;
     border-radius: 5px;
-}
-footer{
+  }
+  .container .form-access .help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5px;
+    margin-top: 10px;
+  }
+  .container .form-access .help p {
+    margin: 0;
+  }
+  .menu {
+    background-color: black;
+  }
+  .menu h5 {
+    margin: 0;
+  }
+  .menu ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .menu ul li {
+    color: aliceblue;
+    margin: 10px;
+  }
+  .menu ul li input.input-search {
+    height: 15px;
+    margin-right: 2px;
+  }
+  .menu ul li input.input-search:focus-visible {
+    outline: none;
+  }
+  .menu ul li button.btn-user {
+    height: 35px;
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+  }
+  .menu ul li .btn-search {
+    border: 0;
+    height: 21px;
+    border-radius: 3px;
+    background-color: burlywood;
+  }
+  .menu ul li img.cart-icon {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+  }
+  .menu .user-link {
+    position: absolute;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3px;
+  }
+  .menu a {
+    margin: 3px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  /*    Shop    */
+  .products {
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .products .card-product {
+    padding: 5px;
+    width: 80%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .products .card-product .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .products .card-product .button-card .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card .info-card {
+    background-color: gold;
+  }
+  .products .card-product h2.card-title {
+    font-size: medium;
+  }
+  .products .card-product .img-card img {
+    width: 100%;
+  }
+  .products .card-product button.btn-card {
+    margin: 2px;
+    height: 30px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+  }
+  /* ---------------- */
+  footer {
     border: 1px solid black;
     background-color: gray;
-}
-.f-main {
+  }
+  footer .f-sub {
+    text-align: center;
+    padding: 10px;
+    background-color: #5a5a5a;
+  }
+  footer .f-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 15px;
-}
-.f-child {
+  }
+  footer .f-child {
     width: 100%;
-}
-.f-child ul{
-    list-style: none;
-}
-.f-icons img {
+  }
+  footer .f-icons img {
     width: 40px;
     margin: 5px;
-}
-.f-child a {
+  }
+  footer .f-child a {
     text-decoration: none;
     color: black;
     font-size: larger;
     font-family: system-ui;
+  }
+  footer ul {
+    list-style: none;
+  }
 }
-.container {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .form-access {
+    width: 30%;
+    display: -ms-grid;
+    display: grid;
+    padding: 10%;
+    border: 1px solid black;
+    margin: 70px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  .container .form-access h2.form-title {
+    text-align: center;
+  }
+  .container .form-access button.send {
+    width: 100%;
+    padding: 6px;
+    margin-top: 15px;
+    background-color: #f0aeae;
+    border-radius: 6px;
+    border: 0px;
+  }
+  .container .form-access button.send:hover {
+    background-color: #d0d1d1;
+  }
+  .container .form-access .form-control {
+    width: 100%;
+    border: 1px solid lightgrey;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .container .form-access .help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5px;
+    margin-top: 10px;
+  }
+  .container .form-access .help p {
+    margin: 0;
+  }
+  .menu {
+    background-color: black;
+  }
+  .menu h5 {
+    margin: 0;
+  }
+  .menu ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .menu ul li {
+    color: aliceblue;
+    margin: 10px;
+  }
+  .menu ul li input.input-search {
+    height: 15px;
+    margin-right: 2px;
+  }
+  .menu ul li input.input-search:focus-visible {
+    outline: none;
+  }
+  .menu ul li button.btn-user {
+    height: 35px;
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+  }
+  .menu ul li .btn-search {
+    border: 0;
+    height: 21px;
+    border-radius: 3px;
+    background-color: burlywood;
+  }
+  .menu ul li img.cart-icon {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+  }
+  .menu .user-link {
+    position: absolute;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3px;
+  }
+  .menu a {
+    margin: 3px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  /*    Shop    */
+  .products {
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-grid-columns: (2fr)[3];
+        grid-template-columns: repeat(3, 2fr);
+  }
+  .products .card-product {
+    padding: 5px;
+    width: 80%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .products .card-product .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .products .card-product .button-card .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card .info-card {
+    background-color: gold;
+  }
+  .products .card-product h2.card-title {
+    font-size: medium;
+  }
+  .products .card-product .img-card img {
+    width: 100%;
+  }
+  .products .card-product button.btn-card {
+    margin: 2px;
+    height: 30px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+  }
+  /* ---------------- */
+  footer {
+    border: 1px solid black;
+    background-color: gray;
+  }
+  footer .f-sub {
+    text-align: center;
+    padding: 10px;
+    background-color: #5a5a5a;
+  }
+  footer .f-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+  }
+  footer .f-child {
+    width: 100%;
+  }
+  footer .f-icons img {
+    width: 40px;
+    margin: 5px;
+  }
+  footer .f-child a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: system-ui;
+  }
+  footer ul {
+    list-style: none;
+  }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .form-access {
+    width: 30%;
+    display: -ms-grid;
+    display: grid;
+    padding: 10%;
+    border: 1px solid black;
+    margin: 70px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  .container .form-access h2.form-title {
+    text-align: center;
+  }
+  .container .form-access button.send {
+    width: 100%;
+    padding: 6px;
+    margin-top: 15px;
+    background-color: #f0aeae;
+    border-radius: 6px;
+    border: 0px;
+  }
+  .container .form-access button.send:hover {
+    background-color: #d0d1d1;
+  }
+  .container .form-access .form-control {
+    width: 100%;
+    border: 1px solid lightgrey;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .container .form-access .help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5px;
+    margin-top: 10px;
+  }
+  .container .form-access .help p {
+    margin: 0;
+  }
+  .menu {
+    background-color: black;
+  }
+  .menu h5 {
+    margin: 0;
+  }
+  .menu ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .menu ul li {
+    color: aliceblue;
+    margin: 10px;
+  }
+  .menu ul li input.input-search {
+    height: 15px;
+    margin-right: 2px;
+  }
+  .menu ul li input.input-search:focus-visible {
+    outline: none;
+  }
+  .menu ul li button.btn-user {
+    height: 35px;
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+  }
+  .menu ul li .btn-search {
+    border: 0;
+    height: 21px;
+    border-radius: 3px;
+    background-color: burlywood;
+  }
+  .menu ul li img.cart-icon {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+  }
+  .menu .user-link {
+    position: absolute;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3px;
+  }
+  .menu a {
+    margin: 3px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  /*    Shop    */
+  .products {
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-grid-columns: (2fr)[3];
+        grid-template-columns: repeat(3, 2fr);
+  }
+  .products .card-product {
+    padding: 5px;
+    width: 80%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .products .card-product .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .products .card-product .button-card .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card .info-card {
+    background-color: gold;
+  }
+  .products .card-product h2.card-title {
+    font-size: medium;
+  }
+  .products .card-product .img-card img {
+    width: 100%;
+  }
+  .products .card-product button.btn-card {
+    margin: 2px;
+    height: 30px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+  }
+  /* ---------------- */
+  footer {
+    border: 1px solid black;
+    background-color: gray;
+  }
+  footer .f-sub {
+    text-align: center;
+    padding: 10px;
+    background-color: #5a5a5a;
+  }
+  footer .f-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+  }
+  footer .f-child {
+    width: 100%;
+  }
+  footer .f-icons img {
+    width: 40px;
+    margin: 5px;
+  }
+  footer .f-child a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: system-ui;
+  }
+  footer ul {
+    list-style: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .form-access {
+    width: 30%;
+    display: -ms-grid;
+    display: grid;
+    padding: 10%;
+    border: 1px solid black;
+    margin: 70px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  .container .form-access h2.form-title {
+    text-align: center;
+  }
+  .container .form-access button.send {
+    width: 100%;
+    padding: 6px;
+    margin-top: 15px;
+    background-color: #f0aeae;
+    border-radius: 6px;
+    border: 0px;
+  }
+  .container .form-access button.send:hover {
+    background-color: #d0d1d1;
+  }
+  .container .form-access .form-control {
+    width: 100%;
+    border: 1px solid lightgrey;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .container .form-access .help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5px;
+    margin-top: 10px;
+  }
+  .container .form-access .help p {
+    margin: 0;
+  }
+  .menu {
+    background-color: black;
+  }
+  .menu h5 {
+    margin: 0;
+  }
+  .menu ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .menu ul li {
+    color: aliceblue;
+    margin: 10px;
+  }
+  .menu ul li input.input-search {
+    height: 15px;
+    margin-right: 2px;
+  }
+  .menu ul li input.input-search:focus-visible {
+    outline: none;
+  }
+  .menu ul li button.btn-user {
+    height: 35px;
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+  }
+  .menu ul li .btn-search {
+    border: 0;
+    height: 21px;
+    border-radius: 3px;
+    background-color: burlywood;
+  }
+  .menu ul li img.cart-icon {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+  }
+  .menu .user-link {
+    position: absolute;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3px;
+  }
+  .menu a {
+    margin: 3px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  /*    Shop    */
+  .products {
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-grid-columns: (2fr)[4];
+        grid-template-columns: repeat(4, 2fr);
+  }
+  .products .card-product {
+    padding: 5px;
+    width: 80%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .products .card-product .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .products .card-product .button-card .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card .info-card {
+    background-color: gold;
+  }
+  .products .card-product h2.card-title {
+    font-size: medium;
+  }
+  .products .card-product .img-card img {
+    width: 100%;
+  }
+  .products .card-product button.btn-card {
+    margin: 2px;
+    height: 30px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+  }
+  /* ---------------- */
+  footer {
+    border: 1px solid black;
+    background-color: gray;
+  }
+  footer .f-sub {
+    text-align: center;
+    padding: 10px;
+    background-color: #5a5a5a;
+  }
+  footer .f-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+  }
+  footer .f-child {
+    width: 100%;
+  }
+  footer .f-icons img {
+    width: 40px;
+    margin: 5px;
+  }
+  footer .f-child a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: system-ui;
+  }
+  footer ul {
+    list-style: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .form-access {
+    width: 30%;
+    display: -ms-grid;
+    display: grid;
+    padding: 10%;
+    border: 1px solid black;
+    margin: 70px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  .container .form-access h2.form-title {
+    text-align: center;
+  }
+  .container .form-access button.send {
+    width: 100%;
+    padding: 6px;
+    margin-top: 15px;
+    background-color: #f0aeae;
+    border-radius: 6px;
+    border: 0px;
+  }
+  .container .form-access button.send:hover {
+    background-color: #d0d1d1;
+  }
+  .container .form-access .form-control {
+    width: 100%;
+    border: 1px solid lightgrey;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .container .form-access .help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5px;
+    margin-top: 10px;
+  }
+  .container .form-access .help p {
+    margin: 0;
+  }
+  .menu {
+    background-color: black;
+  }
+  .menu h5 {
+    margin: 0;
+  }
+  .menu ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .menu ul li {
+    color: aliceblue;
+    margin: 10px;
+  }
+  .menu ul li input.input-search {
+    height: 15px;
+    margin-right: 2px;
+  }
+  .menu ul li input.input-search:focus-visible {
+    outline: none;
+  }
+  .menu ul li button.btn-user {
+    height: 35px;
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+  }
+  .menu ul li .btn-search {
+    border: 0;
+    height: 21px;
+    border-radius: 3px;
+    background-color: burlywood;
+  }
+  .menu ul li img.cart-icon {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+  }
+  .menu .user-link {
+    position: absolute;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3px;
+  }
+  .menu a {
+    margin: 3px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  /*    Shop    */
+  .products {
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-grid-columns: (2fr)[4];
+        grid-template-columns: repeat(4, 2fr);
+  }
+  .products .card-product {
+    padding: 5px;
+    width: 80%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .products .card-product .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .products .card-product .button-card .add {
+    background-color: cadetblue;
+  }
+  .products .card-product .button-card .info-card {
+    background-color: gold;
+  }
+  .products .card-product h2.card-title {
+    font-size: medium;
+  }
+  .products .card-product .img-card img {
+    width: 100%;
+  }
+  .products .card-product button.btn-card {
+    margin: 2px;
+    height: 30px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+  }
+  /* ---------------- */
+  footer {
+    border: 1px solid black;
+    background-color: gray;
+  }
+  footer .f-sub {
+    text-align: center;
+    padding: 10px;
+    background-color: #5a5a5a;
+  }
+  footer .f-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+  }
+  footer .f-child {
+    width: 100%;
+  }
+  footer .f-icons img {
+    width: 40px;
+    margin: 5px;
+  }
+  footer .f-child a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: system-ui;
+  }
+  footer ul {
+    list-style: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

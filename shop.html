@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="jquery-3.6.0.js"></script>
     <title>Negozio</title>
 </head>
 <body>
     <nav class="menu" id="">
         <ul>
             <li><h5>Ecommerce</h5></li>
-            <li>home</li>
-            <li>shop</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
             <li><input type="text" name="" id="" class="input-search"><button class="btn-search">Cerca</button></li>
-            <li class="user-link"><img src="img/icon/cart.png"  class="cart-icon"alt=""><button class="btn-user">Login</button></li>
+            <li class="user-link"><img src="img/icon/cart.png"  class="cart-icon"alt=""><button class="btn-user"><a href="login.html">Login</a></button></li>
             
         </ul>
         
@@ -32,16 +31,96 @@
         </div> -->
         <script src="products.js"></script>
         <script>
-            if(Array.isArray(shop)){
-                alert('è un array');
-            }
-            else{
-                alert('non è un array');
-            }
-            text = shop.toString();
-            $('#show').html(text);
-        </script>
+            // if(Array.isArray(shop)){
+            //     alert('è un array');
+            // }
+            // else{
+            //     alert('non è un array');
+            // }
+            
+            // for(i=0; i<shop.length; i++){
+            //     document.write(shop.length);
+            //     for(c=0; c<shop[i]; c++){
+            //         document.write(shop[i].length);
+            //     }
+            // }
+        </script> 
         <p id="show"></p>
+       <div class="products">
+            <div class="card-product">
+                <div class="img-card">
+                    <img src="https://m.media-amazon.com/images/I/61Np0ZIiRCL._SX466_.jpg" alt="">
+                </div>
+                <div class="sub-card">
+                    <h2 class="card-title">Cavo USB C, [2 pezzi 2M] USB tipo C in nylon Fast Charge tipo C cavo di ricarica rapida per Samsung Galaxy S20 S10 S9 S8 Plus Note 20 10 9 8 A3 A5 2017, Huawei P20 P10, Sony Xperia</h2>
+                </div>
+                <div class="sub.body">
+                    <b>7,99$</b>
+                    <div class="button-card">
+                        <button class="btn-card add">Aggiungi</button><button class="btn-card info-card">Scheda</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="img-card">
+                    <img src="https://m.media-amazon.com/images/I/61Np0ZIiRCL._SX466_.jpg" alt="">
+                </div>
+                <div class="sub-card">
+                    <h2 class="card-title">Cavo USB C, [2 pezzi 2M] USB tipo C in nylon Fast Charge tipo C cavo di ricarica rapida per Samsung Galaxy S20 S10 S9 S8 Plus Note 20 10 9 8 A3 A5 2017, Huawei P20 P10, Sony Xperia</h2>
+                </div>
+                <div class="sub.body">
+                    <b>7,99$</b>
+                    <div class="button-card">
+                        <button class="btn-card add">Aggiungi</button><button class="btn-card info-card">Scheda</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="img-card">
+                    <img src="https://m.media-amazon.com/images/I/61Np0ZIiRCL._SX466_.jpg" alt="">
+                </div>
+                <div class="sub-card">
+                    <h2 class="card-title">Cavo USB C, [2 pezzi 2M] USB tipo C in nylon Fast Charge tipo C cavo di ricarica rapida per Samsung Galaxy S20 S10 S9 S8 Plus Note 20 10 9 8 A3 A5 2017, Huawei P20 P10, Sony Xperia</h2>
+                </div>
+                <div class="sub.body">
+                    <b>7,99$</b>
+                    <div class="button-card">
+                        <button class="btn-card add">Aggiungi</button><button class="btn-card info-card">Scheda</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="img-card">
+                    <img src="https://m.media-amazon.com/images/I/61Np0ZIiRCL._SX466_.jpg" alt="">
+                </div>
+                <div class="sub-card">
+                    <h2 class="card-title">Cavo USB C, [2 pezzi 2M] USB tipo C in nylon Fast Charge tipo C cavo di ricarica rapida per Samsung Galaxy S20 S10 S9 S8 Plus Note 20 10 9 8 A3 A5 2017, Huawei P20 P10, Sony Xperia</h2>
+                </div>
+                <div class="sub.body">
+                    <b>7,99$</b>
+                    <div class="button-card">
+                        <button class="btn-card add">Aggiungi</button><button class="btn-card info-card">Scheda</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="img-card">
+                    <img src="https://m.media-amazon.com/images/I/61Np0ZIiRCL._SX466_.jpg" alt="">
+                </div>
+                <div class="sub-card">
+                    <h2 class="card-title">Cavo USB C, [2 pezzi 2M] USB tipo C in nylon Fast Charge tipo C cavo di ricarica rapida per Samsung Galaxy S20 S10 S9 S8 Plus Note 20 10 9 8 A3 A5 2017, Huawei P20 P10, Sony Xperia</h2>
+                </div>
+                <div class="sub.body">
+                    <b>7,99$</b>
+                    <div class="button-card">
+                        <button class="btn-card add">Aggiungi</button><button class="btn-card info-card">Scheda</button>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
     </div>
     <footer>
         <div class="f-main">

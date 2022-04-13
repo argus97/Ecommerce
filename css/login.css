@@ -11,6 +11,7 @@ button.btn-user {
     border: 0;
     color: aliceblue;
 }
+
 .btn-search {
     border: 0;
     height: 21px;
@@ -66,7 +67,7 @@ li.user-link {
     color: aliceblue;
 }
 .form-login{
-    width: 50%;
+    width: 30%;
     display: grid;
     padding: 10%;
     border: 1px solid black;

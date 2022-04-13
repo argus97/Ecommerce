@@ -11,21 +11,31 @@
     <nav class="menu" id="">
         <ul>
             <li><h5>Ecommerce</h5></li>
-            <li>home</li>
-            <li>shop</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
             <li><input type="text" name="" id="" class="input-search"><button class="btn-search">Cerca</button></li>
-            <li class="user-link"><img src="img/icon/cart.png"  class="cart-icon"alt=""><button class="btn-user">Login</button></li>
+            <li class="user-link"><img src="img/icon/cart.png"  class="cart-icon"alt=""><button class="btn-user"><a href="login.html">Login</a></button></li>
             
         </ul>
-        
+        <button class="btn-menu">Menu</button>
     </nav>
     <div class="container">
-        <div class="form-login">
+        <div class="form-access">
+            <h2 class="form-title">Accedi</h2>
         <label for="email">Email</label>
         <input type="email" name="" id="email" class="form-control hvr-underline-from-center">
         <label for="password">Password</label>
         <input type="password" id="password" class="form-control">
+        <div class="check-remember">
+            <input type="checkbox" id="remember"> <label for="rember">Ricordami</label>
+        </div>
         <button class="send">Invia</button>
+        <div class="help">
+            <p>Non sei registrato?</p><a href="signup.html">Registrati</a>
+        </div>
+        <div class="help">
+            <p>Password dimenticata</p><a href="">Clicca qui</a>
+        </div>
         </div>
     </div>
     <footer>

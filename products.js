@@ -1,171 +1,159 @@
-var shop = {
-   Electronics: [
-       {
-           name: "LG Tv 42 inch",
-           price: "21,999",
-           real_price: "25,999",
-           img: "http://www.lg.com/us/images/tvs/md05802269/gallery/medium01.jpg"
-       },
-       {
-           name: "Samsung Tv 40 inch",
-           price: "20,999",
-           real_price: "24,999",
-           img: "http://www.220-electronics.com/media/catalog/product/s/o/sony-kdl55hx750multi-system-tv-angle_1.png"
-       },
-       {
-           name: "Panasonic Tv",
-           price: "19,999",
-           real_price: "22,999",
-           img: "https://images-na.ssl-images-amazon.com/images/I/61Ekm1BJYbL._SX355_.jpg"
-       },
-       {
-           name: "Sony Tv 50 inch",
-           price: "28,999",
-           real_price: "35,999",
-           img: "http://www.220-electronics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/o/sony-kdl55hx750multi-system-tv_1.png"
-       },
-       {
-           name: "Sharp Tv",
-           price: "29,999",
-           real_price: "34,999",
-           img: "http://blackfridaytvs.com/wp-content/uploads/2014/11/Sharp-AQUOS-60-LED-1080p-Smart-HDTV-Black-LC-60LE644U-Best-Buy-SKU-8890013.png"
-       },
-       {
-           name: "Toshiba Tv",
-           price: "32,999",
-           real_price: "36,999",
-           img: "http://www.1a20.com/wp-content/uploads/2012/11/4758734_S1E2.png"
-       },
-       {
-           name: "Vizio Tv",
-           price: "51,999",
-           real_price: "79,999",
-           img: "http://blackfridaytvs.com/wp-content/uploads/2014/11/VIZIO-50-Class-LED-1080p-240Hz-Smart-HDTV-M502I-B1-Best-Buy-SKU-7501014-300x257.png"
-       }
-   ],
-   Furniture: [
-       {
-           name: "Bean Bag",
-           price: "2,999",
-           real_price: "3,999",
-           img: "http://www.coolbeanbags.in/image/cache/data/Processed%20Images/Classic%20bean%20bags/bean-bag-purple-500x500.png"
-       },
-       {
-           name: "Sofa Set",
-           price: "20,000",
-           real_price: "23,999",
-           img: "http://www.reformatapecaria.com.br/public/img/default/servicos-de-tapecaria/home/reforma-de-sofa-3-lugares.png"
-       },
-       {
-           name: "Almirah",
-           price: "11,500",
-           real_price: "15,999",
-           img: "https://img3.exportersindia.com/product_images/bc-small/dir_150/4491558/stainless-steel-almirah-1506398699-3355017.jpeg"
-       },
-       {
-           name: "Bed",
-           price: "45,000",
-           real_price: "55,999",
-           img: "http://pngimg.com/uploads/bed/bed_PNG17401.png"
-       },
-       {
-           name: "Office Chair",
-           price: "6,999",
-           real_price: "15,999",
-           img: "http://www.freepngimg.com/thumb/chair/4-office-chair-png-image-thumb.png"
-       },
-       {
-           name: "Dining Table",
-           price: "16,999",
-           real_price: "25,999",
-           img: "http://lisa-grahner.com/wp-content/uploads/2016/03/zio-table-oak.png"
-       }
-   ],
-   HomeAppliance: [
-       {
-           name: "Iron",
-           price: "1,999",
-           real_price: "5,999",
-           img: "http://pngimg.com/uploads/iron/iron_PNG15563.png"
-       },
-       {
-           name: "Mixer Juicer",
-           price: "8,999",
-           real_price: "15,999",
-           img: "https://images.philips.com/is/image/PhilipsConsumer/HL7715_00-IMS-en_IN?wid=494&hei=435&$pnglarge$"
-       },
-       {
-           name: "Food Processor",
-           price: "4,999",
-           real_price: "5,999",
-           img: "http://www.220-electronics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/l/black-decker-fx810-220-volt-food-processor.png"
-       },
-       {
-           name: "Microwave",
-           price: "10,000",
-           real_price: "11,999",
-           img: "http://www.pngpix.com/wp-content/uploads/2016/04/Black-Microwave-Oven-PNG-image.png"
-       },
-       {
-           name: "Sandwich Maker",
-           price: "1800",
-           real_price: "2,999",
-           img: "http://www.pngpix.com/wp-content/uploads/2016/04/Sandwich-Maker-and-Grill-PNG-image-500x453.png"
-       },
-       {
-           name: "Air Fryer",
-           price: "5,500",
-           real_price: "5,999",
-           img: "https://i.ebayimg.com/images/g/2qYAAOSwpvZaAvVD/s-l300.jpg"
-       },
-       {
-           name: "Playstation",
-           price: "36,000",
-           real_price: "40,999",
-           img: "https://www.loveroms.com/assets/img/consoles/logos/playstation.png"
-       }
-   ]
-};
-
-var object2 = {
-   name: "Food Processor",
-   price: "4,999",
-   real_price: "5,999",
-   img: "http://www.220-electronics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/l/black-decker-fx810-220-volt-food-processor.png"
-};
-
-var object3 = {
-   name: "Microwave",
-   price: "10,000",
-   real_price: "11,999",
-   img: "http://www.pngpix.com/wp-content/uploads/2016/04/Black-Microwave-Oven-PNG-image.png"
-};
-
-var object4 = {
-   name: "Sandwich Maker",
-   price: "1800",
-   real_price: "2,999",
-   img: "http://www.pngpix.com/wp-content/uploads/2016/04/Sandwich-Maker-and-Grill-PNG-image-500x453.png"
-};
-
-var object5 = {
-   name: "Sandwich Maker",
-   price: "1800",
-   real_price: "2,999",
-   img: "http://www.pngpix.com/wp-content/uploads/2016/04/Sandwich-Maker-and-Grill-PNG-image-500x453.png"
-};
-
-var object6 = {
-   name: "Air Fryer",
-   price: "5,500",
-   real_price: "5,999",
-   img: "https://i.ebayimg.com/images/g/2qYAAOSwpvZaAvVD/s-l300.jpg"
-};
-
-var object7 = {
-   name: "Playstation",
-   price: "36,000",
-   real_price: "40,999",
-   img: "https://www.loveroms.com/assets/img/consoles/logos/playstation.png"
-};
-console.log(shop);
+var shop =[
+    {
+      Id: "jenlooper-cactus",
+      Maker: "@jenlooper",
+      img: "https://user-images.githubusercontent.com/41929050/61567048-13938600-aa33-11e9-9cfd-712191013192.jpeg",
+      Url: "https://www.hackster.io/agent-hawking-1/the-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
+      Title: "The Quantified Cactus: An Easy Plant Soil Moisture Sensor",
+      Description: "This project is a good learning project to get comfortable with soldering and programming an Arduino.",
+      Ratings: [
+        5,
+        5
+      ]
+    },
+    {
+      Id: "jenlooper-light",
+      Maker: "jenlooper",
+      img: "https://user-images.githubusercontent.com/41929050/61567049-13938600-aa33-11e9-9c69-a4184bf8e524.jpeg",
+      Url: "https://www.hackster.io/agent-hawking-1/book-light-dee7e4",
+      Title: "A beautiful switch-on book light",
+      Description: "Use craft items you have around the house, plus two LEDs and a LilyPad battery holder, to create a useful book light for reading in the dark.",
+      Ratings: null
+    },
+    {
+      Id: "jenlooper-lightshow",
+      Maker: "@jenlooper",
+      img: "https://user-images.githubusercontent.com/41929050/61567053-13938600-aa33-11e9-9780-104fe4019659.png",
+      Url: "https://www.hackster.io/agent-hawking-1/bling-your-laptop-with-an-internet-connected-light-show-30e4db",
+      Title: "Bling your Laptop with an Internet-Connected Light Show",
+      Description: "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
+      Ratings: null
+    },
+    {
+      Id: "jenlooper-survival",
+      Maker: "jenlooper",
+      img: "https://user-images.githubusercontent.com/41929050/61567051-13938600-aa33-11e9-8ae7-0b5c19aafab4.jpeg",
+      Url: "https://www.hackster.io/agent-hawking-1/create-a-compact-survival-kit-38bfdb",
+      Title: "Create a Compact Survival Kit with LED Track Lighting",
+      Description: "Use an Altoids tin with Chibitronics sticker LEDs to create a light-up compact that doubles as a survival kit for the young hipster",
+      Ratings: null
+    },
+    {
+      Id: "sailorhg-bubblesortpic",
+      Maker: "sailorhg",
+      img: "https://user-images.githubusercontent.com/41929050/61567054-13938600-aa33-11e9-9163-eec98e239b7a.png",
+      Url: "https://twitter.com/sailorhg/status/1090107740049952770",
+      Title: "Bubblesort Visualization",
+      Description: "Visualization of sailor scouts sorted by bubblesort algorithm by their planet's distance from the sun",
+      Ratings: null
+    },
+    {
+      Id: "sailorhg-corsage",
+      Maker: "sailorhg",
+      img: "https://user-images.githubusercontent.com/41929050/61567055-142c1c80-aa33-11e9-96ff-9fbac6413625.png",
+      Url: "https://twitter.com/sailorhg/status/1090113666911891456",
+      Title: "Light-up Corsage",
+      Description: "Light-up corsage I made with my summer intern.",
+      Ratings: null
+    },
+    {
+      Id: "sailorhg-kit",
+      Maker: "sailorhg",
+      img: "https://user-images.githubusercontent.com/41929050/61567056-142c1c80-aa33-11e9-8682-10065d338145.png",
+      Url: "https://twitter.com/sailorhg/status/1090122822007963648",
+      Title: "Pastel hardware kit",
+      Description: "Pastel hardware kits complete with custom manufactured pastel alligator clips.",
+      Ratings: null
+    },
+    {
+      Id: "sailorhg-led",
+      Maker: "sailorhg",
+      img: "https://user-images.githubusercontent.com/41929050/61567052-13938600-aa33-11e9-9a88-cd842073ba44.jpg",
+      Url: "https://twitter.com/sailorhg/status/1090117277540745216",
+      Title: "Heart-shaped LED",
+      Description: "custom molded heart shaped LED with sprinkles.",
+      Ratings: null
+    },
+    {
+      Id: "selinazawacki-soi-shirt",
+      Maker: "selinazawacki",
+      img: "https://user-images.githubusercontent.com/41929050/61567060-142c1c80-aa33-11e9-8188-5a4803844a9e.png",
+      Url: "https://www.instagram.com/p/BNvESj-j8PI/",
+      Title: "Black Sweatshirt",
+      Description: "Black sweatshirt hoody with the Sick of the Internet logo.",
+      Ratings: null
+    },
+    {
+      Id: "selinazawacki-soi-pins",
+      Maker: "selinazawacki",
+      img: "https://user-images.githubusercontent.com/41929050/61567059-142c1c80-aa33-11e9-939b-2ecf4492786d.png",
+      Url: "https://www.instagram.com/p/BNm6hZzDoEF/",
+      Title: "Sick of the Internet Pins",
+      Description: "Still some time to enter the pin/sticker giveaway! ",
+      Ratings: null
+    },
+    {
+      Id: "vogueandcode-hipster-dev-bro",
+      Maker: "vogueandcode",
+      img: "https://user-images.githubusercontent.com/41929050/61567061-14c4b300-aa33-11e9-9fee-63ff2c0c9823.png",
+      Url: "https://www.vogueandcode.com/shop/hipster-dev-bro",
+      Title: "Hipster Dev",
+      Description: "Hipster Dev is busy coding away while styled in a camo jacket and orange beanie.",
+      Ratings: null
+    },
+    {
+      Id: "vogueandcode-pretty-girls-code-tee",
+      Maker: "vogueandcode",
+      img: "https://user-images.githubusercontent.com/41929050/61567062-14c4b300-aa33-11e9-9dcd-8bfed4ece810.png",
+      Url: "https://www.vogueandcode.com/shop/pretty-girls-code-tee",
+      Title: "Pretty Girls Code Tee",
+      Description: "Everyone’s favorite design is finally here on a tee! The Pretty Girls Code crew-neck tee is available in a soft pink with red writing.",
+      Ratings: null
+    },
+    {
+      Id: "vogueandcode-ruby-sis-2",
+      Maker: "vogueandcode",
+      img: "https://user-images.githubusercontent.com/41929050/61567063-14c4b300-aa33-11e9-8515-bcb866da9ea3.png",
+      Url: "https://www.vogueandcode.com/shop/ruby-sis-2",
+      Title: "Ruby Sis",
+      Description: "Styled in a dashiki, Ruby Sis is listening to music while coding in her favorite language, Ruby!",
+      Ratings: [
+        3,
+        5,
+        5,
+        4,
+        3,
+        2,
+        1,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      Id: "selinazawacki-moon",
+      Maker: "selinazawacki",
+      img: "https://user-images.githubusercontent.com/41929050/61567057-142c1c80-aa33-11e9-9781-9e442418eaab.png",
+      Url: "https://www.instagram.com/p/BFktVYPinKQ/",
+      Title: "Holographic Dark Moon Necklace",
+      Description: "Not sure if I'll be making more, get it while I have it in the store.",
+      Ratings: null
+    },
+    {
+      Id: "selinazawacki-shirt",
+      Maker: "selinazawacki",
+      img: "https://user-images.githubusercontent.com/41929050/61567058-142c1c80-aa33-11e9-89fb-b4f30d84d69d.png",
+      Url: "https://www.instagram.com/p/BEXlpiZCnJ3",
+      Title: "Floppy Crop",
+      Description: "Used up the Diskette fabric today to make 2 of these crops.",
+      Ratings: null
+    }
+  ];

@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <nav class="menu" id="">
         <ul>
             <li><h5>Ecommerce</h5></li>
-            <li>home</li>
-            <li>shop</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
             <li><input type="text" name="" id="" class="input-search"><button class="btn-search">Cerca</button></li>
-            <li class="user-link"><img src="img/icon/cart.png"  class="cart-icon"alt=""><button class="btn-user">Login</button></li>
+            <li class="user-link"><img src="img/icon/cart.png"  class="cart-icon"alt=""><button class="btn-user"><a href="login.html">Login</a></button></li>
             
         </ul>
         
     </nav>
 
     <div class="container">
-        <div class="form-login">
+        <div class="form-access">
+            <h2 class="form-title">Registrati</h2>
         <div class="nameSurname">
             <div class="boxName">
                 <label for="name">Name</label>
@@ -42,6 +43,12 @@
         <label for="password">Password</label>
         <input type="password" id="password" class="form-control">
         <button class="send">Invia</button>
+        <div class="help">
+            <p>Sei già registrato?</p><a href="login.html">Entra</a>
+        </div>
+        <div class="help">
+            <p>Password dimenticata</p><a href="">Clicca qui</a>
+        </div>
         </div>
     </div>
     <footer>
