@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+input.input-search {
+    height: 15px;
+    margin-right: 2px;
+}
+button.btn-user {
+    height: 35px;
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+}
+.btn-search {
+    border: 0;
+    height: 21px;
+    border-radius: 3px;
+    background-color: burlywood;
+}
+input.input-search:focus-visible {
+    outline: none;
+}
+img.cart-icon {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+}
+.f-sub{
+    text-align: center;
+    padding: 10px;
+    background-color: #5a5a5a;
+}
+.menu {
+    background-color: black;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.menu li{
+    color:aliceblue;
+    margin: 10px;
+
+}
+.menu h5{
+    margin: 0;
+}
+.form-control{
+    width: 100%;
+    height: 30px
+}
+.form-control:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 2px 0px #5a5a5a;
+    transition: 0.2s;
+}
+li.user-link {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    margin: 3px;
+}
+.user-link a {
+    margin: 3px;
+    color: aliceblue;
+}
+.form-login{
+    width: 50%;
+    display: grid;
+    padding: 10%;
+    border: 1px solid black;
+    margin: 70px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+button.send{
+    width: 100px;
+    padding: 6px;
+    margin-top: 15px;
+    background-color:rgb(201 198 198);
+    border-radius: 6px;
+    border: 0px;
+}
+button.send:hover {
+    background-color: #d0d1d1;
+}
+.form-control {
+    width: 100%;
+    border: 1px solid lightgrey;
+    height: 30px;
+    border-radius: 5px;
+}
+/*      Sign Up     */
+.nameSurname {
+   display: flex;
+   justify-content: space-between;
+}
+/* .boxName {
+    padding-right: 20px;
+}
+.boxSurname {
+    padding-left: 20px;
+} */
+/*--------------------------*/
+footer{
+    border: 1px solid black;
+    background-color: gray;
+}
+.f-main {
+    display: flex;
+    padding: 15px;
+}
+.f-child {
+    width: 100%;
+}
+.f-child ul{
+    list-style: none;
+}
+.f-icons img {
+    width: 40px;
+    margin: 5px;
+}
+.f-child a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: system-ui;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
